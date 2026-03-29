@@ -1,0 +1,7 @@
+week,student_name,score,metric_name,higher_is_better,model_family,notes
+6,Alice,0.9012,Accuracy,True,CNN,"Strong baseline"
+6,Bob,0.8934,Accuracy,True,Transfer,"Good tuning"
+7,Alice,3.42,MAE,False,GRU,"Longer window"
+7,Bob,3.87,MAE,False,LSTM,"Stable training"
+8,Alice,0.9010,Accuracy,True,BiLSTM+Attention,"Best model"
+8,Bob,0.8871,Accuracy,True,BiLSTM,"Strong baseline"

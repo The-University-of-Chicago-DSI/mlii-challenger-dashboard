@@ -1,0 +1,26 @@
+{
+  "6": {
+    "title": "Image Classification",
+    "focus": "Improve performance using transfer learning",
+    "topics": ["CNNs", "Transfer Learning", "Fine-Tuning"],
+    "metric_name": "Accuracy",
+    "higher_is_better": true,
+    "wa_score": 0.8746
+  },
+  "7": {
+    "title": "Sequential Models",
+    "focus": "Optimize RNN, LSTM, GRU models",
+    "topics": ["RNN", "LSTM", "GRU", "Vanishing Gradients"],
+    "metric_name": "MAE",
+    "higher_is_better": false,
+    "wa_score": 4.1834
+  },
+  "8": {
+    "title": "NLP with Attention",
+    "focus": "Use embeddings and attention mechanisms",
+    "topics": ["Tokenization", "Embeddings", "Attention"],
+    "metric_name": "Accuracy",
+    "higher_is_better": true,
+    "wa_score": 0.8746
+  }
+}
