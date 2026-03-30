@@ -1,7 +1,27 @@
-week,student_name,score,metric_name,higher_is_better,model_family,notes
-6,Alice,0.9012,Accuracy,True,CNN,"Strong baseline"
-6,Bob,0.8934,Accuracy,True,Transfer,"Good tuning"
-7,Alice,3.42,MAE,False,GRU,"Longer window"
-7,Bob,3.87,MAE,False,LSTM,"Stable training"
-8,Alice,0.9010,Accuracy,True,BiLSTM+Attention,"Best model"
-8,Bob,0.8871,Accuracy,True,BiLSTM,"Strong baseline"
+week,student_name,score,metric_name,higher_is_better,model_family,status,notes
+1,Tantawy,0.840823,Accuracy,True,KNN,Valid,
+1,Keahey,0.837343,Accuracy,True,KNN,Valid,
+1,Jiang,0.836524,Accuracy,True,KNN,Valid,
+1,Urman,0.835807,Accuracy,True,KNN,Valid,
+1,Pollitt,0.835295,Accuracy,True,KNN,Valid,
+1,Ivanovic,0.835193,Accuracy,True,KNN,Valid,
+1,Yamashita,0.835091,Accuracy,True,KNN,Valid,
+1,Tabuti,0.834988,Accuracy,True,KNN,Valid,
+1,Para,0.834783,Accuracy,True,KNN,Valid,
+1,Yu,0.834579,Accuracy,True,KNN,Valid,
+1,Choo,0.833146,Accuracy,True,KNN,Valid,
+1,Rios,0.829563,Accuracy,True,KNN,Valid,
+1,Li,0.824445,Accuracy,True,KNN,Valid,
+1,Gallo,0.823728,Accuracy,True,KNN,Valid,
+1,Kim,0.823319,Accuracy,True,KNN,Valid,
+1,Everson,0.823319,Accuracy,True,KNN,Valid,
+1,Bhattacharya,0.821578,Accuracy,True,KNN,Valid,
+1,Bergeson,0.820452,Accuracy,True,KNN,Valid,
+1,Skwarek,0.819122,Accuracy,True,KNN,Valid,
+1,Kochanny,0.815437,Accuracy,True,KNN,Valid,
+1,Chiu,0.808681,Accuracy,True,KNN,Valid,
+1,Ezhang,0.799980,Accuracy,True,KNN,Valid,
+1,Oliphant,0.793121,Accuracy,True,KNN,Valid,
+1,Bevan,0.776231,Accuracy,True,KNN,Valid,
+1,Dunkle,0.759238,Accuracy,True,KNN,Valid,
+1,Bui,,Accuracy,True,KNN,Invalid shape,"Found input variables with inconsistent numbers of samples: expected 9769, got 7815"
