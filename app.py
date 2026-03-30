@@ -407,7 +407,7 @@ def render_week_tab(week, cfg, df):
             st.markdown(
                 f'''
                 <div class="gap-caption" style="margin-top:6px;">
-                    Historical Best held by 🏆 <strong>Sajan Mehta</strong>
+                    Historical Best held by 🏆 <strong>Mo Kahn</strong>
                 </div>
                 ''',  # noqa: F541
                 unsafe_allow_html=True

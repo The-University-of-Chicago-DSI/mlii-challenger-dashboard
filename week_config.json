@@ -10,12 +10,12 @@
     ],
     "metric_name": "Accuracy",
     "higher_is_better": true,
-    "wa_score": 0.842256,
+    "wa_score": 0.839492,
     "benchmark_label": "Historical Best",
     "teaching_notes": [
       "This week shows how competitive simple models can be when tuned carefully.",
       "The leaderboard is tightly clustered, highlighting the importance of small improvements.",
-      "Sajan Mehta’s historical score of 0.842256 still leads this challenge.",
+      "Mo Khan’s historical score of 0.839492 still leads this challenge.",
       "One submission failed due to a shape mismatch, which is a useful reminder that output format matters."
     ]
   }
