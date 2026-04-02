@@ -18,5 +18,115 @@
       "Mo Khan’s historical score of 0.839492 still leads this challenge.",
       "One submission failed due to a shape mismatch, which is a useful reminder that output format matters."
     ]
-  }
+  },
+  "2": {
+    "title": "KNN vs Logistic Regression Challenge",
+    "focus": "Build the strongest classifier on the expanded dataset using either an improved KNN pipeline or logistic regression.",
+    "topics": [
+        "K-Nearest Neighbors",
+        "Logistic Regression",
+        "Categorical encoding",
+        "Feature scaling",
+        "Hyperparameter tuning",
+        "Classification accuracy"
+    ],
+    "metric_name": "Accuracy",
+    "higher_is_better": true,
+    "wa_score": 0.849319,
+    "benchmark_label": "Historical Best",
+    "benchmark_holder": "Kelechi Isuigo"
+  },
+    "3": {
+    "title": "Regression Model Challenge",
+    "focus": "Build the strongest regression model and minimize mean squared error on the challenge set.",
+    "topics": [
+        "Regression modeling",
+        "Model comparison",
+        "Mean Squared Error",
+        "Feature engineering",
+        "Hyperparameter tuning"
+    ],
+    "metric_name": "MSE",
+    "higher_is_better": false,
+    "wa_score": 1138712000.0,
+    "benchmark_label": "Historical Best",
+    "benchmark_holder": "Dev Patel"
+  },
+  "4": {
+  "title": "Recommendation Systems Challenge",
+  "focus": "Build the strongest collaborative filtering recommender and minimize prediction error on unseen user-item interactions.",
+  "topics": [
+    "User-based collaborative filtering",
+    "Item-based collaborative filtering",
+    "Sparsity",
+    "Fallback predictions",
+    "Mean Squared Error"
+  ],
+  "metric_name": "MSE",
+  "higher_is_better": false,
+  "wa_score": null,
+  "benchmark_label": "Historical Best"
+},
+"5": {
+  "title": "Multiclass MLP Challenge",
+  "focus": "Build the strongest multiclass neural network classifier and maximize accuracy on the challenge set.",
+  "topics": [
+    "Multilayer Perceptrons",
+    "Multiclass classification",
+    "Hidden layers",
+    "Regularization",
+    "Classification accuracy"
+  ],
+  "metric_name": "Accuracy",
+  "higher_is_better": true,
+  "wa_score": null,
+  "benchmark_label": "Historical Best"
+},
+"6": {
+  "title": "Computer Vision Model Competition",
+  "focus": "Build the strongest image classification model you can and maximize validation accuracy.",
+  "topics": [
+    "CNNs",
+    "Transfer learning",
+    "Fine-tuning",
+    "Regularization",
+    "Classification accuracy"
+  ],
+  "metric_name": "Accuracy",
+  "higher_is_better": true,
+  "wa_score": null,
+  "benchmark_label": "Historical Best"
+},
+"7": {
+  "title": "Sequential Forecasting Model Competition",
+  "focus": "Build the strongest sequential forecasting model you can and minimize forecasting error on unseen future data.",
+  "topics": [
+    "RNNs",
+    "LSTMs",
+    "GRUs",
+    "Sequential data",
+    "Time series forecasting",
+    "Mean Absolute Error"
+  ],
+  "metric_name": "MAE",
+  "higher_is_better": false,
+  "wa_score": null,
+  "benchmark_label": "Historical Best"
+},
+"8": {
+  "title": "NLP Sequence Models and Transformers Competition",
+  "focus": "Build the strongest sentiment classification model you can using course-aligned sequence models or transformer architectures and maximize validation accuracy.",
+  "topics": [
+    "Embeddings",
+    "Sequence-to-sequence models",
+    "Encoder-decoder architectures",
+    "Transformers",
+    "Text classification",
+    "Classification accuracy"
+  ],
+  "metric_name": "Accuracy",
+  "higher_is_better": true,
+  "wa_score": null,
+  "benchmark_label": "Historical Best"
+}
 }

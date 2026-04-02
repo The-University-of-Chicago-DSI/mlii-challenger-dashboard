@@ -376,6 +376,7 @@ def render_week_tab(week, cfg, df):
     metric_name = cfg.get("metric_name", "Score")
     benchmark_score = cfg.get("wa_score", None)
     benchmark_label = cfg.get("benchmark_label", "Benchmark")
+    benchmark_holder = cfg.get("benchmark_holder", None)
 
     dfw = sort_week_df(dfw, higher_is_better)
     dfw["rank"] = range(1, len(dfw) + 1)
@@ -404,21 +405,146 @@ def render_week_tab(week, cfg, df):
                 f'<div class="gap-caption">Gap to {benchmark_label}: {gap:.6f}</div>',
                 unsafe_allow_html=True
             )
-            st.markdown(
-                f'''
-                <div class="gap-caption" style="margin-top:6px;">
-                    Historical Best held by 🏆 <strong>Mo Kahn</strong>
-                </div>
-                ''',  # noqa: F541
-                unsafe_allow_html=True
-            )
+
+            if benchmark_holder:
+                st.markdown(
+                    f'<div class="gap-caption"><strong>{benchmark_label}</strong> held by <strong>{benchmark_holder}</strong></div>',
+                    unsafe_allow_html=True
+                )
 
     st.markdown('<div class="section-title">Full Leaderboard</div>', unsafe_allow_html=True)
 
     display_df = dfw.copy()
     display_df["score"] = display_df["score"].apply(format_score)
     display_df = display_df[["rank", "student_name", "score", "status"]]
-    display_df.columns = ["Rank", "Student", "Accuracy", "Status"]
+    display_df.columns = ["Rank", "Student", metric_name, "Status"]
+    st.dataframe(display_df, use_container_width=True, hide_index=True)
+
+
+def compute_overall_leaderboard(df: pd.DataFrame) -> pd.DataFrame:
+    overall_rows = []
+
+    for week in sorted(df["week"].unique(), key=lambda x: int(x)):
+        dfw = df[df["week"] == str(week)].copy()
+
+        # only valid submissions count toward weekly ranking
+        valid_df = dfw[dfw["status"].str.lower() == "valid"].copy()
+        if valid_df.empty:
+            continue
+
+        higher_is_better = bool(valid_df["higher_is_better"].iloc[0])
+        valid_df = valid_df.sort_values("score", ascending=not higher_is_better).reset_index(drop=True)
+        valid_df["rank"] = range(1, len(valid_df) + 1)
+
+        n_valid = len(valid_df)
+
+        # if only one valid submission, give full credit
+        if n_valid == 1:
+            valid_df["relative_score"] = 1.0
+        else:
+            valid_df["relative_score"] = (n_valid - valid_df["rank"]) / (n_valid - 1)
+
+        for _, row in valid_df.iterrows():
+            overall_rows.append({
+                "student_name": row["student_name"],
+                "week": week,
+                "rank": int(row["rank"]),
+                "relative_score": float(row["relative_score"])
+            })
+
+    overall_df = pd.DataFrame(overall_rows)
+
+    if overall_df.empty:
+        return pd.DataFrame(columns=[
+            "student_name", "weeks_submitted", "total_relative_score",
+            "average_relative_score", "best_finish"
+        ])
+
+    summary = (
+        overall_df.groupby("student_name")
+        .agg(
+            weeks_submitted=("week", "nunique"),
+            total_relative_score=("relative_score", "sum"),
+            average_relative_score=("relative_score", "mean"),
+            best_finish=("rank", "min"),
+        )
+        .reset_index()
+    )
+
+    summary = summary.sort_values(
+        ["total_relative_score", "average_relative_score", "weeks_submitted", "best_finish"],
+        ascending=[False, False, False, True]
+    ).reset_index(drop=True)
+
+    summary["overall_rank"] = range(1, len(summary) + 1)
+
+    return summary
+
+def render_overall_tab(df: pd.DataFrame):
+    st.markdown('<div class="section-title">Overall Quarter Leaderboard</div>', unsafe_allow_html=True)
+
+    st.markdown(
+        """
+        <div class="summary-strip">
+            <div class="mini-kicker">Overall Scoring</div>
+            <div class="focus-line">
+                Weekly results are converted into relative rank scores so performance can be compared fairly across different challenges.
+            </div>
+            <div class="topic-line">
+                A first-place finish in a given week earns a score of 1.0, the last valid finish earns 0.0, and everyone else is scaled in between.
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    overall_df = compute_overall_leaderboard(df)
+
+    if overall_df.empty:
+        st.info("No overall leaderboard data available yet.")
+        return
+
+    top3 = overall_df.head(3)
+    medals = ["🥇", "🥈", "🥉"]
+    cols = st.columns(3)
+
+    for i in range(min(3, len(top3))):
+        row = top3.iloc[i]
+        with cols[i]:
+            st.markdown(
+                f"""
+                <div class="podium-card">
+                    <div class="podium-medal">{medals[i]}</div>
+                    <div class="podium-place">Overall Rank</div>
+                    <div class="podium-name">{row['student_name']}</div>
+                    <div class="podium-score-label">Total Relative Score</div>
+                    <div class="podium-score">{row['total_relative_score']:.3f}</div>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+
+    st.markdown('<div class="section-title">Overall Standings</div>', unsafe_allow_html=True)
+
+    display_df = overall_df.copy()
+    display_df = display_df[[
+        "overall_rank",
+        "student_name",
+        "weeks_submitted",
+        "total_relative_score",
+        "average_relative_score",
+        "best_finish"
+    ]]
+
+    display_df.columns = [
+        "Rank",
+        "Student",
+        "Weeks Submitted",
+        "Total Relative Score",
+        "Average Relative Score",
+        "Best Weekly Finish"
+    ]
+
     st.dataframe(display_df, use_container_width=True, hide_index=True)
 
 
@@ -431,11 +557,15 @@ def main():
     render_header()
 
     weeks = list(config.keys())
-    tabs = st.tabs([f"Week {week}" for week in weeks])
+    tab_labels = [f"Week {week}" for week in weeks] + ["Overall"]
+    tabs = st.tabs(tab_labels)
 
-    for tab, week in zip(tabs, weeks):
+    for tab, week in zip(tabs[:-1], weeks):
         with tab:
             render_week_tab(week, config[week], df)
+
+    with tabs[-1]:
+        render_overall_tab(df)
 
 
 if __name__ == "__main__":

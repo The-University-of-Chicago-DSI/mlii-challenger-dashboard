@@ -25,3 +25,45 @@ week,student_name,score,metric_name,higher_is_better,model_family,status,notes
 1,Bevan,0.776231,Accuracy,True,KNN,Valid,
 1,Dunkle,0.759238,Accuracy,True,KNN,Valid,
 1,Bui,,Accuracy,True,KNN,Invalid shape,"Found input variables with inconsistent numbers of samples: expected 9769, got 7815"
+2,Andrew Ng,0.846200,Accuracy,True,Logistic Regression,Valid,
+2,Yann Lecun,0.843900,Accuracy,True,KNN,Valid,
+2,Geoffrey Hinton,0.841500,Accuracy,True,Logistic Regression,Valid,
+2,Yoshua Bengio,0.838700,Accuracy,True,KNN,Valid,
+2,Ian Goodfellow,0.836100,Accuracy,True,Logistic Regression,Valid,
+2,Placeholder Error,,Accuracy,True,KNN,Invalid format,"Temporary test row"
+3,Andrew Ng,1245000000.0,MSE,False,Linear Regression,Valid,
+3,Yann Lecun,1312000000.0,MSE,False,Random Forest Regressor,Valid,
+3,Geoffrey Hinton,1458000000.0,MSE,False,XGBoost Regressor,Valid,
+3,Yoshua Bengio,1521000000.0,MSE,False,Ridge Regression,Valid,
+3,Ian Goodfellow,1674000000.0,MSE,False,KNN Regressor,Valid,
+3,Placeholder Error,,MSE,False,Linear Regression,Invalid format,"Temporary test row"
+4,Andrew Ng,1.284500,MSE,False,User-Based CF,Valid,
+4,Yann Lecun,1.312800,MSE,False,Item-Based CF,Valid,
+4,Geoffrey Hinton,1.356200,MSE,False,User-Based CF,Valid,
+4,Yoshua Bengio,1.402900,MSE,False,Item-Based CF,Valid,
+4,Ian Goodfellow,1.447600,MSE,False,Hybrid CF,Valid,
+4,Placeholder Error,,MSE,False,User-Based CF,Invalid format,"Temporary test row"
+5,Andrew Ng,0.861400,Accuracy,True,MLP,Valid,
+5,Yann Lecun,0.874200,Accuracy,True,Tuned MLP,Valid,
+5,Geoffrey Hinton,0.881700,Accuracy,True,Deeper MLP,Valid,
+5,Yoshua Bengio,0.878900,Accuracy,True,Regularized MLP,Valid,
+5,Ian Goodfellow,0.885300,Accuracy,True,Dropout MLP,Valid,
+5,Placeholder Error,,Accuracy,True,MLP,Invalid format,"Temporary test row"
+6,Andrew Ng,0.864200,Accuracy,True,Improved CNN,Valid,
+6,Yann Lecun,0.881500,Accuracy,True,Transfer Learning,Valid,
+6,Geoffrey Hinton,0.889700,Accuracy,True,Fine-Tuned CNN,Valid,
+6,Yoshua Bengio,0.876900,Accuracy,True,Regularized CNN,Valid,
+6,Ian Goodfellow,0.892100,Accuracy,True,Transfer Learning + Fine-Tuning,Valid,
+6,Placeholder Error,,Accuracy,True,Improved CNN,Invalid format,"Temporary test row"
+7,Andrew Ng,4.283000,MAE,False,RNN,Valid,
+7,Yann Lecun,3.941000,MAE,False,LSTM,Valid,
+7,Geoffrey Hinton,3.782000,MAE,False,GRU,Valid,
+7,Yoshua Bengio,3.864000,MAE,False,Stacked LSTM,Valid,
+7,Ian Goodfellow,3.715000,MAE,False,Tuned GRU,Valid,
+7,Placeholder Error,,MAE,False,RNN,Invalid format,"Temporary test row"
+8,Andrew Ng,0.881600,Accuracy,True,BiLSTM,Valid,
+8,Yann Lecun,0.889900,Accuracy,True,Transformer Encoder,Valid,
+8,Geoffrey Hinton,0.892700,Accuracy,True,BiGRU,Valid,
+8,Yoshua Bengio,0.895100,Accuracy,True,Regularized Transformer,Valid,
+8,Ian Goodfellow,0.897400,Accuracy,True,Transformer Encoder + Tuned Embeddings,Valid,
+8,Placeholder Error,,Accuracy,True,BiLSTM,Invalid format,"Temporary test row"
