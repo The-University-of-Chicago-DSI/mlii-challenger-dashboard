@@ -1,0 +1,13 @@
+# Ignore sensitive / local-only data
+submissions/
+hidden/
+
+# Ignore numpy / model artifacts
+*.csv
+*.npy
+*.npz
+
+# Optional: ignore common junk
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
