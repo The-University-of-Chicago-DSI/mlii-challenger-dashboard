@@ -71,13 +71,13 @@ week,student_name,score,metric_name,higher_is_better,model_family,status,notes
 3,Yamashita,2495851098.6836314,MSE,False,,Valid,
 3,Kim,2516923052.3197975,MSE,False,,Valid,
 3,Dunkle,55899721600.360085,MSE,False,,Valid,
-3,Kochanny,1704178219.426755,MSE,False,,Invalid -external data used,"Used external data for feature engineering, which is not allowed according to the rules."
+3,Kochanny,False,MSE,False,,Invalid -external data used,"Used external data for feature engineering, which is not allowed according to the rules."
 3,Tabuti,False,MSE,False,,Invalid – external data used,"Used external data for predictions, which is not allowed according to the rules."]"
-3,Bevan,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 3303]"
-3,Chiu,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 3303]"
-3,Ivanovic,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 4029]"
-3,Keahey,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 4127]"
-3,Pollitt,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 3303]"
+3,Bevan,,MSE,False,,Invalid - inconsistent numbers of samples,"Found input variables with inconsistent numbers of samples: [4128, 3303]"
+3,Chiu,,MSE,False,,Invalid - inconsistent numbers of samples,"Found input variables with inconsistent numbers of samples: [4128, 3303]"
+3,Ivanovic,,MSE,False,,Invalid - inconsistent numbers of samples,"Found input variables with inconsistent numbers of samples: [4128, 4029]"
+3,Keahey,,MSE,False,,Invalid - inconsistent numbers of samples,"Found input variables with inconsistent numbers of samples: [4128, 4127]"
+3,Pollitt,,MSE,False,,Invalid - inconsistent numbers of samples,"Found input variables with inconsistent numbers of samples: [4128, 3303]"
 4,Andrew Ng,1.284500,MSE,False,User-Based CF,Valid,
 4,Yann Lecun,1.312800,MSE,False,Item-Based CF,Valid,
 4,Geoffrey Hinton,1.356200,MSE,False,User-Based CF,Valid,
