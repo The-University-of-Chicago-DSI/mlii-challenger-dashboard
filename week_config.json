@@ -48,9 +48,9 @@
     ],
     "metric_name": "MSE",
     "higher_is_better": false,
-    "wa_score": 1138712000.0,
+    "wa_score": 1792097000.0,
     "benchmark_label": "Historical Best",
-    "benchmark_holder": "Dev Patel"
+    "benchmark_holder": "Ana Sy_Quia"
   },
   "4": {
   "title": "Recommendation Systems Challenge",

@@ -50,12 +50,34 @@ week,student_name,score,metric_name,higher_is_better,model_family,status,notes
 2,Chiu,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [9769, 7815]"
 2,Para,,Accuracy,True,,Invalid format,Labels in y_true and y_pred should be of the same type. Got y_true=['<=50K' '>50K'] and y_pred=[0 1]. Make sure that the predictions provided by the classifier coincides with the true labels.
 2,Petrisor,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [9769, 7677]"
-3,Andrew Ng,1245000000.0,MSE,False,Linear Regression,Valid,
-3,Yann Lecun,1312000000.0,MSE,False,Random Forest Regressor,Valid,
-3,Geoffrey Hinton,1458000000.0,MSE,False,XGBoost Regressor,Valid,
-3,Yoshua Bengio,1521000000.0,MSE,False,Ridge Regression,Valid,
-3,Ian Goodfellow,1674000000.0,MSE,False,KNN Regressor,Valid,
-3,Placeholder Error,,MSE,False,Linear Regression,Invalid format,"Temporary test row"
+3,Bhattacharya,1799187243.094895,MSE,False,,Valid,
+3,Alli,1819975746.6452396,MSE,False,,Valid,
+3,Choo,1860645451.5300424,MSE,False,,Valid,
+3,Bergeson,1874657600.3923213,MSE,False,,Valid,
+3,Gallo,1916256187.4769864,MSE,False,,Valid,
+3,Ezhang,1944913895.454841,MSE,False,,Valid,
+3,Nagle,1947294047.773946,MSE,False,,Valid,
+3,Yu,2113646003.4040596,MSE,False,,Valid,
+3,Petrisor,2148927106.6661234,MSE,False,,Valid,
+3,Rios,2188023431.978779,MSE,False,,Valid,
+3,Oliphantj,2188256521.9043565,MSE,False,,Valid,
+3,Elizondo,2199554986.8747883,MSE,False,,Valid,
+3,Urman,2234532701.4365635,MSE,False,,Valid,
+3,Tantawy,2244499504.937608,MSE,False,,Valid,
+3,Bui,2279233740.4339247,MSE,False,,Valid,
+3,Everson,2432886077.7568197,MSE,False,,Valid,
+3,Skwarek,2490550424.480922,MSE,False,,Valid,
+3,Para,2495851098.6836314,MSE,False,,Valid,
+3,Yamashita,2495851098.6836314,MSE,False,,Valid,
+3,Kim,2516923052.3197975,MSE,False,,Valid,
+3,Dunkle,55899721600.360085,MSE,False,,Valid,
+3,Kochanny,1704178219.426755,MSE,False,,Invalid -external data used,"Used external data for feature engineering, which is not allowed according to the rules."
+3,Tabuti,False,MSE,False,,Invalid – external data used,"Used external data for predictions, which is not allowed according to the rules."]"
+3,Bevan,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 3303]"
+3,Chiu,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 3303]"
+3,Ivanovic,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 4029]"
+3,Keahey,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 4127]"
+3,Pollitt,,MSE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [4128, 3303]"
 4,Andrew Ng,1.284500,MSE,False,User-Based CF,Valid,
 4,Yann Lecun,1.312800,MSE,False,Item-Based CF,Valid,
 4,Geoffrey Hinton,1.356200,MSE,False,User-Based CF,Valid,
