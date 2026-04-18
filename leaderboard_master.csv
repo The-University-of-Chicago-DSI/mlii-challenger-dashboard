@@ -67,6 +67,7 @@ week,student_name,score,metric_name,higher_is_better,model_family,status,notes
 3,Urman,2234532701.4365635,MSE,False,,Valid,
 3,Tantawy,2244499504.937608,MSE,False,,Valid,
 3,Bui,2279233740.4339247,MSE,False,,Valid,
+3,Li,2379112471.889304,MSE,False,,Valid,
 3,Everson,2432886077.7568197,MSE,False,,Valid,
 3,Skwarek,2490550424.480922,MSE,False,,Valid,
 3,Para,2495851098.6836314,MSE,False,,Valid,
