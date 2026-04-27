@@ -79,8 +79,9 @@
   ],
   "metric_name": "Accuracy",
   "higher_is_better": true,
-  "wa_score": null,
-  "benchmark_label": "Historical Best"
+  "wa_score": 0.980643,
+  "benchmark_label": "Historical Best",
+  "benchmark_holder": "Kwaku Ofori-Atta"
 },
 "6": {
   "title": "Computer Vision Model Competition",
