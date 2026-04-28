@@ -136,8 +136,8 @@ week,student_name,score,metric_name,higher_is_better,model_family,status,notes
 5,Para,0.9698571428571429,Accuracy,True,,Valid,
 5,Dunkle,0.9685,Accuracy,True,,Valid,
 5,Oliphantj,0.9410714285714286,Accuracy,True,,Valid,
-5,Chiu,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [14000, 13791]"
-5,Petrisor,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [14000, 56000]"
+5,Chiu,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [14000, 13791]",
+5,Petrisor,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [14000, 56000]",
 6,Andrew Ng,0.864200,Accuracy,True,Improved CNN,Valid,
 6,Yann Lecun,0.881500,Accuracy,True,Transfer Learning,Valid,
 6,Geoffrey Hinton,0.889700,Accuracy,True,Fine-Tuned CNN,Valid,
