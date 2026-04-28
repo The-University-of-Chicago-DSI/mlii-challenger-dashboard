@@ -83,7 +83,7 @@ week,student_name,score,metric_name,higher_is_better,model_family,status,notes
 4,Bhattacharya,0.7485242836975862,MSE,False,,Valid,
 4,Skwarek,0.7542459719300663,MSE,False,,Valid,
 4,Yu,0.7690499884987564,MSE,False,,Valid,
-4,Everson,0.7bers of samples: [14000, 56000]"824178078211613,MSE,False,,Valid,
+4,Everson,0.7824178078211613,MSE,False,,Valid,
 4,Pollitt,0.7886208429643727,MSE,False,,Valid,
 4,Li,0.7886394238994321,MSE,False,,Valid,
 4,Bergeson,0.796923547086048,MSE,False,,Valid,
@@ -136,8 +136,8 @@ week,student_name,score,metric_name,higher_is_better,model_family,status,notes
 5,Para,0.9698571428571429,Accuracy,True,,Valid,
 5,Dunkle,0.9685,Accuracy,True,,Valid,
 5,Oliphantj,0.9410714285714286,Accuracy,True,,Valid,
-5,Chiu,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [14000, 13791]",
-5,Petrisor,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [14000, 56000]",
+5,Chiu,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [14000, 13791]"
+5,Petrisor,,Accuracy,True,,Invalid format,"Found input variables with inconsistent numbers of samples: [14000, 56000]"
 6,Andrew Ng,0.864200,Accuracy,True,Improved CNN,Valid,
 6,Yann Lecun,0.881500,Accuracy,True,Transfer Learning,Valid,
 6,Geoffrey Hinton,0.889700,Accuracy,True,Fine-Tuned CNN,Valid,
