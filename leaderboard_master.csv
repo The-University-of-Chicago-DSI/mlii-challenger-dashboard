@@ -149,7 +149,7 @@ week,student_name,score,metric_name,higher_is_better,model_family,status,notes
 6,Oliphant,0.8872,Accuracy,True,,Valid,
 6,Alli,0.8843,Accuracy,True,,Valid,
 6,Li,0.8471,Accuracy,True,,Valid,
-6,Final,0.8461,Accuracy,True,,Valid,
+6,Yu,0.8461,Accuracy,True,,Valid,
 6,Gallo,0.8316,Accuracy,True,,Valid,
 6,Keahey,0.8243,Accuracy,True,,Valid,
 6,Elizondo,0.8234,Accuracy,True,,Valid,
