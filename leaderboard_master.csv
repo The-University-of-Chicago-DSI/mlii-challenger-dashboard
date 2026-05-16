@@ -163,12 +163,27 @@ week,student_name,score,metric_name,higher_is_better,model_family,status,notes
 6,Para,0.2757,Accuracy,True,,Valid,
 6,Bui,0.2286,Accuracy,True,,Valid,
 6,Chiu,0.1004,Accuracy,True,,Valid,
-7,Andrew Ng,4.283000,MAE,False,RNN,Valid,
-7,Yann Lecun,3.941000,MAE,False,LSTM,Valid,
-7,Geoffrey Hinton,3.782000,MAE,False,GRU,Valid,
-7,Yoshua Bengio,3.864000,MAE,False,Stacked LSTM,Valid,
-7,Ian Goodfellow,3.715000,MAE,False,Tuned GRU,Valid,
-7,Placeholder Error,,MAE,False,RNN,Invalid format,"Temporary test row"
+7,Tabuti,2.018667175292969,MAE,False,,Valid,
+7,Kim,3.2417872111002612,MAE,False,,Valid,
+7,Everson,3.3258656819661447,MAE,False,,Valid,
+7,Bergeson,3.7506393432617178,MAE,False,,Valid,
+7,Alli,3.844053141276041,MAE,False,,Valid,
+7,Urman,3.946655782063803,MAE,False,,Valid,
+7,Yamashita,4.294262186686197,MAE,False,,Valid,
+7,Ivanovic,4.30349884033203,MAE,False,,Valid,
+7,Pollitt,12.694476613920582,MAE,False,,Valid,
+7,Chiu,25.178561336981755,MAE,False,,Valid,
+7,Skwarek,34.186179097493486,MAE,False,,Valid,
+7,Bhattacharya,110.88786583468905,MAE,False,,Valid,
+7,Yu,260.0417058026584,MAE,False,,Valid,
+7,Bui,,MAE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [30, 20]"
+7,Choo,,MAE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [30, 23]"
+7,Ezhang,,MAE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [30, 25]"
+7,Gallo,,MAE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [30, 20]"
+7,Li,,MAE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [30, 20]"
+7,Nagle,,MAE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [30, 23]"
+7,Para,,MAE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [30, 21]"
+7,Para,,MAE,False,,Invalid format,"Found input variables with inconsistent numbers of samples: [30, 21]"
 8,Andrew Ng,0.881600,Accuracy,True,BiLSTM,Valid,
 8,Yann Lecun,0.889900,Accuracy,True,Transformer Encoder,Valid,
 8,Geoffrey Hinton,0.892700,Accuracy,True,BiGRU,Valid,
